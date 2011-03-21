@@ -4,7 +4,7 @@ require 'sinatra'
 require 'haml'
 
 before do
-  @trend = Twitter.local_trends(2487956)
+  @trend = Twitter.local_trends(638242)
 end
 
 get '/' do
