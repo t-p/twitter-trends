@@ -1,8 +1,12 @@
 !!! 
 %html
   %head
-    %title 
+    %title today's twitter trends
     %link(rel="stylesheet" href="/css/style.css")
 
   %body
-    %a= trend
+    - trend.each do |key, value|
+      %h1= key 
+      - value.each do |tweet|
+        %a= tweet.name
+        %br

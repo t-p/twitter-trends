@@ -9,5 +9,5 @@ get '/' do
 end
 
 def trend
-  Twitter.local_trends(1)
+  Twitter.trends_current
 end
