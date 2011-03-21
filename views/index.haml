@@ -5,7 +5,7 @@
     %link(rel="stylesheet" href="/css/style.css")
 
   %body
-    - @trend.each do |key, value|
+    - trend.each do |key, value|
       %h1= key 
       - value.each do |tweet|
         %a= tweet.name
