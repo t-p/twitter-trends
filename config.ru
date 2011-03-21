@@ -3,5 +3,5 @@ require 'bundler'
 
 Bundler.require
 
-require './fetch_flickr'
+require './twitter_trends'
 run Sinatra::Application
