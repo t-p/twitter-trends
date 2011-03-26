@@ -6,8 +6,8 @@
 
   %body
     - trend.each do |key, value|
-      %h1= key 
-      %a= value
+      %a= key 
+/     %a= value
 /     - value.each do |tweet|
 /       %a= tweet.name
 /       %br
