@@ -6,9 +6,7 @@
 
   %body
     %h1 Trends in Deutschland
-    - trend.each do |key|
-      %a= key 
-      %br
-/     %a= value
-/     - value.each do |tweet|
-/       %a= tweet.name
+    %ul
+      - trend.each do |key|
+        %a(href="/#{key}")
+          %li= "#{key}"

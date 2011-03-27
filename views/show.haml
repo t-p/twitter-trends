@@ -1,0 +1,10 @@
+!!! 
+%html
+  %head
+    %title Hmmm 
+    %link(rel="stylesheet" href="/css/style.css")
+
+  %body
+    - @page.each do |key|
+      %a= key.text
+      %br
