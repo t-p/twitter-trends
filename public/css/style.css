@@ -81,3 +81,10 @@ h1 {
   padding: 25px 80px;
   color: #454545; }
 
+#content a {
+  color: #333;
+  text-decoration: none; }
+
+#content a:hover {
+  color: #333;
+  text-decoration: underline; }

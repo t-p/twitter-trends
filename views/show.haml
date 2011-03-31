@@ -1,5 +1,5 @@
 %ul.round
-  - @page.each do |key|
+  - @tweet.each do |key|
     %li
       %img(src="#{key.profile_image_url}") 
-      = "#{key.text}"
+      = parse_for_url(key.text)

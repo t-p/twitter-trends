@@ -10,6 +10,12 @@ helpers do
   def trend
     Twitter.local_trends(23424829)
   end
+
+  def parse_for_url(text)
+    # The regex could probably still be improved, but this seems to do the
+    # trick for most cases.
+    text.gsub(/(https?:\/\/\w+(\.\w+)+(\/[\w\+\-\,\%]+)*(\?[\w\[\]]+(=\w*)?(&\w+(=\w*)?)*)?(#\w+)?)/i, '<a href="\1" target="_blank">\1</a>')
+  end
 end
 
 get '/' do
@@ -17,6 +23,6 @@ get '/' do
 end
 
 get '/:show' do |tweets|
-  @page = Twitter::Search.new.q(tweets).language("de").fetch
+  @tweet = Twitter::Search.new.q(tweets).language("de").result_type("recent").no_retweets.fetch
   haml :show
 end
