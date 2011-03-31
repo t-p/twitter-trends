@@ -17,6 +17,6 @@ get '/' do
 end
 
 get '/:show' do |tweets|
-  @page = Twitter::Search.new.q(tweets).fetch
+  @page = Twitter::Search.new.q(tweets).language("de").fetch
   haml :show
 end
