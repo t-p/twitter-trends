@@ -3,6 +3,6 @@
 this is just the first attempt to make 
 some use out of the twitter gem. 
 
-http://quiet-sunset-656.heroku.com/
+http://quiet-sunset-656.heroku.com
 
 later on I will incorporate this into a rails app...
