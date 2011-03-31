@@ -1,10 +1,5 @@
-!!! 
-%html
-  %head
-    %title Hmmm 
-    %link(rel="stylesheet" href="/css/style.css")
-
-  %body
-    - @page.each do |key|
-      %a= key.text
-      %br
+%ul.round
+  - @page.each do |key|
+    %li
+      %img(src="#{key.profile_image_url}") 
+      = "#{key.text}"

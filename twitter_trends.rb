@@ -3,20 +3,20 @@ require 'twitter'
 require 'sinatra'
 require 'haml'
 
+set :haml, :format => :html5
+
+helpers do
+
+  def trend
+    Twitter.local_trends(23424829)
+  end
+end
 
 get '/' do
   haml :index
 end
 
-get '/:page' do
-  @page = Twitter::Search.new.q(params[:page]).fetch
+get '/:show' do |tweets|
+  @page = Twitter::Search.new.q(tweets).fetch
   haml :show
-end
-
-def trend
-  Twitter.local_trends(23424829)
-end
-
-def find_trend(trend)
-  
 end

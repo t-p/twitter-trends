@@ -1,0 +1,25 @@
+!!! 
+%html
+  %head
+    %title today's twitter trends
+    %link(rel="stylesheet" href="/css/reset.css")
+    %link(rel="stylesheet" href="/css/text.css")
+    %link(rel="stylesheet" href="/css/960.css")
+    %link(rel="stylesheet" href="/css/style.css")
+
+  %body
+    %h1 What's trend in Germany?
+    .container_12
+      %div{:id => "sidebar", :class => "grid_3"}
+        %ul.round
+          - trend.each do |key|
+            %li
+              - if /^\#/ =~ key
+                %a(href="/#{key[1..-1]}")
+                  ="#{key}"
+              - else
+                %a(href="/#{key}")
+                  ="#{key}"
+
+      %div{:id => "content", :class => "grid_9"}
+        = yield
