@@ -81,9 +81,11 @@ h1 {
   padding: 25px 80px;
   color: #454545; }
 
-#content a {
+#content a.external {
   color: #333;
-  text-decoration: none; }
+  text-decoration: none;
+  background:url(img/external.png) 99% 40% no-repeat; 
+  padding-right: 15px; }
 
 #content a:hover {
   color: #333;
