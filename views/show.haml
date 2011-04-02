@@ -1,4 +1,4 @@
-%ul.round
+%ul{:id => "scroller", :class => "round"}
   - @tweet.each do |key|
     %li
       %img(src="#{key.profile_image_url}") 

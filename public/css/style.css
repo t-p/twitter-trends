@@ -56,13 +56,12 @@ h1 {
 #content {
   margin: 10px auto; }
 
-#content ul {
+#content #scroller ul {
   float: left;
   list-style: none; }
 
-#content li {
-  height: 65px;
-  padding: 10px 10px 10px 10px;
+#content #scroller li {
+  height: 65px; padding: 10px 10px 10px 10px;
   border-bottom: dotted 1px #454545;
   margin-right: 20px;
   color: #454545;
