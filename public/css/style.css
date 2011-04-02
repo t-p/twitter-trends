@@ -27,7 +27,6 @@ h1 {
 #sidebar ul {
   margin: 10px auto;
   float: left;
-
   text-shadow: 0 1px 0 white;
   list-style: none; }
 
@@ -37,7 +36,6 @@ h1 {
 #sidebar ul a {
   display: block;
   padding: 10px 30px 10px 20px;
-  list-style-type: none;
   color: #454545;
   font-size: 20px;
   text-decoration: none; } 
@@ -56,11 +54,11 @@ h1 {
 #content {
   margin: 10px auto; }
 
-#content #scroller ul {
+#content ul {
   float: left;
   list-style: none; }
 
-#content #scroller li {
+#content li {
   height: 65px; padding: 10px 10px 10px 10px;
   border-bottom: dotted 1px #454545;
   margin-right: 20px;
