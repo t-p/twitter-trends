@@ -22,11 +22,11 @@ h1 {
 
 /* Sidebar */
 #sidebar {
-  margin-right: 20px; }
+  float: left;
+  margin: 10px 20px; }
 
 #sidebar ul {
-  margin: 10px auto;
-  float: left;
+  display: block;
   text-shadow: 0 1px 0 white;
   list-style: none; }
 
@@ -35,14 +35,15 @@ h1 {
 
 #sidebar ul a {
   display: block;
-  padding: 10px 30px 10px 20px;
+  overflow: hidden;
+  padding: 10px 0 10px 20px;
   color: #454545;
   font-size: 20px;
   text-decoration: none; } 
 
 #sidebar ul a:hover {
   display: block;
-  padding: 10px 30px 10px 20px;
+  padding: 10px 0 10px 20px;
   list-style-type: none;
   color: #ddd;
   text-shadow: 0 1px 0 black;
