@@ -1,8 +1,8 @@
 = today's twitter trends
-
+---
 this is the first attempt to make 
 some use out of the twitter gem. 
 
 http://twitter-trends-de.heroku.com
 
-later on I will incorporate this into a rails app...
+ToDo: make tweets scroll down 
