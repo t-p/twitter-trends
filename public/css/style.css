@@ -23,7 +23,7 @@ h1 {
 /* Sidebar */
 #sidebar {
   float: left;
-  margin: 10px 20px; }
+  margin: 10px 20px 0 20px; }
 
 #sidebar ul {
   display: block;
@@ -53,7 +53,7 @@ h1 {
 
 /* Content */
 #content {
-  margin: 10px auto; }
+  margin: 10px auto 0 auto; }
 
 #content ul {
   float: left;
@@ -88,3 +88,11 @@ h1 {
 #content a:hover {
   color: #333;
   text-decoration: underline; }
+
+#footer p {
+  text-align: center;
+  color: #CCC; }
+
+#footer a {
+  color: #CCC;
+  text-decoration: none; }
