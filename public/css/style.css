@@ -90,7 +90,7 @@ h1 {
   text-decoration: underline; }
 
 #footer p {
-  text-align: center;
+  padding-left: 250px; 
   color: #CCC; }
 
 #footer a {
