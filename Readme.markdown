@@ -1,4 +1,4 @@
-== today's twitter trends
+## today's twitter trends
 * * *
 This Sinatra application shows what's current trend in twitter.  
 Trends are restricted to Germany only. I use the twitter gem to  
