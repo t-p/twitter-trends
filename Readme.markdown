@@ -10,5 +10,5 @@ further use.
 
 Check out the running application.   
 [twitter-trends-de.heroku.com](http://twitter-trends-de.heroku.com)
-
+* * *
 ToDo: make tweets scroll down automatically
