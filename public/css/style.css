@@ -1,10 +1,16 @@
 body {
-  background: #FFF url(img/body.jpg); }
+  background: #FFF url(img/low_contrast_linen_@2X.png); }
 
 h1 {
   text-align: center;
   color: #CCC;
-  margin: 10px auto; }
+  font-size: 2.1em;
+  margin: 30px auto; }
+
+.row {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
 
 /* Round corners */
 .round {
@@ -23,27 +29,28 @@ h1 {
 /* Sidebar */
 #sidebar {
   float: left;
-  margin: 10px 20px 0 20px; }
+  margin: 10px 25px 0 0; }
 
 #sidebar ul {
   display: block;
+  padding-left: 0;
   text-shadow: 0 1px 0 white;
   list-style: none; }
 
 #sidebar li {
-  padding: 3px 10px 3px 0; }
+  padding: 4px 10px; }
 
 #sidebar ul a {
   display: block;
   overflow: hidden;
-  padding: 10px 0 10px 20px;
+  padding: 10px 0 10px 5px;
   color: #454545;
-  font-size: 20px;
+  font-size: 1.1em;
   text-decoration: none; } 
 
 #sidebar ul a:hover {
   display: block;
-  padding: 10px 0 10px 20px;
+  padding: 10px 0 10px 5px;
   list-style-type: none;
   color: #ddd;
   text-shadow: 0 1px 0 black;
@@ -57,17 +64,18 @@ h1 {
 
 #content ul {
   float: left;
+  padding-left: 0;
   list-style: none; }
 
 #content li {
-  height: 65px; padding: 10px 10px 10px 10px;
+  height: 65px; padding: 8px 10px 3px 10px;
   border-bottom: dotted 1px #454545;
-  margin-right: 20px;
+  margin: 0 10px;
   color: #454545;
-  font-size: 1.3em; } 
+  font-size: 1.1em; } 
 
 #content img {
-  padding: 5px 10px 5px 0;
+  padding: 5px 10px 3px 0;
   float:left; }
 
 #content p {
@@ -89,6 +97,7 @@ h1 {
   color: #333;
   text-decoration: underline; }
 
+/* Footer */
 #footer p {
   padding-left: 250px; 
   color: #CCC; }

@@ -2,28 +2,25 @@
 %html
   %head
     %title today's twitter trends
-    %link(rel="stylesheet" href="/css/reset.css")
-    %link(rel="stylesheet" href="/css/text.css")
-    %link(rel="stylesheet" href="/css/960.css")
-    %link(rel="stylesheet" href="/css/style.css")
+    %link{:rel => "stylesheet", :href => "/css/bootstrap.min.css"}
+    %link{:rel => "stylesheet", :href => "/css/style.css"}
 
   %body
+    %a{:href => "https://github.com/t-p/twitter-trends"}
+      %img{:style => "position: absolute; top: 0; right: 0; border: 0;", :src => "https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png", :alt => "Fork me on GitHub"}
     %h1 What's trend in Germany?
-    .container_12
-      %div{:id => "sidebar", :class => "grid_3"}
+    .row
+      %div{:id => "sidebar", :class => "span3"}
         %ul.round
           - trend.each do |key|
             %li
               - if /^\#/ =~ key
-                %a(href="/#{key[1..-1]}")
+                %a{:href => "/#{key[1..-1]}"}
                   ="#{key}"
               - else
-                %a(href="/#{key}")
+                %a{:href => "/#{key}"}
                   ="#{key}"
 
-      %div{:id => "content", :class => "grid_9"}
+      %div{:id => "content", :class => "span9"}
         = yield
-      %div{:id => "footer", :class => "grid_12"}
-        %p 
-          source code @
-          %a{:href => "https://github.com/t-p/twitter-trends", :target => "_blank"} github
+      %div{:id => "footer", :class => "span12"}
