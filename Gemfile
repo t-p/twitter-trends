@@ -2,5 +2,5 @@ source :gemcutter
 
 gem "sinatra"
 gem "json"
-gem "twitter", "1.1.2"
+gem "twitter", "3.7.0"
 gem "haml"

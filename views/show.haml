@@ -1,5 +1,5 @@
 %ul{:class => "round"}
-  - @tweet.each do |key|
+  - @tweets.each do |tweet|
     %li
-      %img(src="#{key.profile_image_url}") 
-      = parse_for_url(key.text)
+      %img(src="#{tweet.profile_image_url}") 
+      = parse_for_url(tweet.full_text)

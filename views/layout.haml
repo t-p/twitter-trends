@@ -14,12 +14,8 @@
         %ul.round
           - trend.each do |key|
             %li
-              - if /^\#/ =~ key
-                %a{:href => "/#{key[1..-1]}"}
-                  ="#{key}"
-              - else
-                %a{:href => "/#{key}"}
-                  ="#{key}"
+              %a{:href => "/search/#{key.query}"}
+                ="#{key.name}"
 
       %div{:id => "content", :class => "span9"}
         = yield
