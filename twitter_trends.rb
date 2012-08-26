@@ -13,14 +13,6 @@ helpers do
   end
 end
 
-def trend
-  Twitter.local_trends(23424829)
-end
-
-def search(query)
-  Twitter.search(query, :rpp => 15, :result_type => 'recent', :lang => 'de').results
-end
-
 get '/' do
   @tweets = search(trend.first.query)
   haml :show
@@ -29,4 +21,14 @@ end
 get '/search/:show' do |query|
   @tweets = search(query)
   haml :show
+end
+
+private
+
+def trend
+  Twitter.local_trends(23424829)
+end
+
+def search(query)
+  Twitter.search(query, :rpp => 15, :result_type => 'recent', :lang => 'de').results
 end
