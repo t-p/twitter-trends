@@ -31,6 +31,4 @@ class TwitterTrends < Sinatra::Base
   def search(query)
     Twitter.search(query, :rpp => 15, :result_type => 'recent', :lang => 'de').results
   end
-
-  run!
 end
