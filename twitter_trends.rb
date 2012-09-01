@@ -6,6 +6,10 @@ require 'haml'
 set :haml, :format => :html5
 
 helpers do
+  def trend
+    Twitter.local_trends(23424829)
+  end
+
   def parse_for_url(text)
     # The regex could probably still be improved, but this seems to do the
     # trick for most cases.
@@ -24,10 +28,6 @@ get '/search/:show' do |query|
 end
 
 private
-
-def trend
-  Twitter.local_trends(23424829)
-end
 
 def search(query)
   Twitter.search(query, :rpp => 15, :result_type => 'recent', :lang => 'de').results

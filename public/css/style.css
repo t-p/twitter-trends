@@ -26,6 +26,12 @@ h1 {
   -webkit-box-shadow: 1px 1px 3px #333;
   box-shadow: 1px 1px 3px #333; }
 
+#badge {
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  border: 0; }
+
 /* Sidebar */
 #sidebar {
   float: left;
