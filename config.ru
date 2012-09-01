@@ -4,4 +4,4 @@ require 'bundler'
 Bundler.require
 
 require './twitter_trends'
-run Sinatra::Application
+run TwitterTrends
