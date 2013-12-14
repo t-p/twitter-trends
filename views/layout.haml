@@ -1,4 +1,4 @@
-!!! 
+!!!
 %html
   %head
     %title today's twitter trends
@@ -12,10 +12,10 @@
     .row
       %div{:id => "sidebar", :class => "span3"}
         %ul.round
-          - trend.each do |key|
+          - trends.each do |key|
             %li
-              %a{:href => "/search/#{key.query}"}
-                ="#{key.name}"
+              %a{:href => "/search/#{key[:query]}"}
+                ="#{key[:name]}"
 
       %div{:id => "content", :class => "span9"}
         = yield
