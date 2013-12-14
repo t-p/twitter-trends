@@ -9,5 +9,5 @@ app is because I wanted to get familiar with the twitter api for
 further use.  
 
 Check out the running application.   
-[twitter-trends-de.heroku.com](http://twitter-trends-de.herokuapp.com)
+[twitter-trends-de.herokuapp.com](http://twitter-trends-de.herokuapp.com)
 * * *
